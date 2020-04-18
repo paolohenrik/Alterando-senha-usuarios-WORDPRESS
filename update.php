@@ -8,7 +8,7 @@ $novasenha = $_POST["novasenha"];
 
 /* echo $id . " " . $novasenha;*/
 
-$atualizar = "UPDATE wp_users SET user_pass = '$novasenha' WHERE ID = $id
+$atualizar = "UPDATE wp_users SET user_pass = MD5('$novasenha') WHERE ID = $id
 ";
 $con = $mysqli->query($atualizar) or die($mysqli->error);
 

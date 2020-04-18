@@ -21,14 +21,9 @@ $con      = $mysqli->query($consulta) or die($mysqli->error);
 </head>
 <body>
 <div class="container mt-5">
-    
-    <div class="row">
-      <div class="text-center">
+      
 	  <h1 class="text-center">Lista de usuarios do Wordpress</h1>
       <br>
-      </div>
-    
-    </div>
 		
 	<table class="table table-striped">
   <thead>
@@ -47,13 +42,12 @@ $con      = $mysqli->query($consulta) or die($mysqli->error);
       <td class="text-center"><?php echo $dado['user_login']; ?></td>
       <td class="text-center"><?php echo $dado['user_pass']; ?></td>
 	  <td class="text-center"><?php echo $dado['user_email']; ?></td>
-	  <td class="text-center"><i class="fa fa-edit" data-toggle="modal" data-target="#Modal" data-id="<?php echo $dado['ID']; ?>"></i></td>
+	  <td class="text-center"><i class="fa fa-edit" data-toggle="modal" data-target="#Modal" data-id="<?php echo $dado['ID']; ?>" style="cursor: pointer"></i></td>
 	</tr>
 		<?php } ?>
   </tbody>
 </table>
 </div>
-
 
 <!-- Modal -->
 
