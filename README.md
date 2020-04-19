@@ -3,7 +3,7 @@
 **Situação onde você ou o seu cliente esqueceu a senha do wordpress e nao consegue mais logar.**
 
 ## Como usar:
-> Copiar a pasta de arquivos pelo FTP na mesma pasta onde esta instalado o wordpress, mais precisamente junto com o wp-config.php
+> Copiar a pasta de arquivos pelo FTP na mesma pasta onde esta instalado o wordpress, mais precisamente junto com o arquivo wp-config.php
 
 ```
 ├───www
